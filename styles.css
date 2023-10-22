@@ -1,0 +1,61 @@
+:root {
+  --primary-color: #464437;
+  --opacity: 75%;
+}
+.back {
+  background-color: var(--primary-color);
+}
+.body {
+  background-color: var(--primary-color);
+  display: block;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 35px;
+  width: 100%;
+}
+a {
+  margin: 23px;
+}
+.p-3 {
+  text-decoration: none;
+}
+.center {
+  text-align: center;
+}
+#buttons {
+  position: relative;
+  margin-top: 12px;
+}
+.about-content {
+  display: flex;
+  justify-content: center;
+}
+.p {
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  padding: 35px;
+  margin: 13px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  width: 620px;
+
+  padding: 24px;
+  margin: 24px;
+  opacity: var(--opacity);
+}
+
+.logo {
+  max-width: 100px;
+}
+.navbar {
+  max-width: 1050px;
+  max-height: 100px;
+}
+#down {
+  margin-top: 75px;
+}

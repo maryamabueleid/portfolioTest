@@ -1,61 +1,89 @@
 :root {
-  --primary-color: #464437;
-  --opacity: 75%;
+  --primary-color: #dbc328;
+  --secondary-color: #464437;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
-.back {
-  background-color: var(--primary-color);
+
+body {
+  background-color: var(--secondary-color);
+  margin-top: 100px;
 }
-.body {
-  background-color: var(--primary-color);
-  display: block;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 35px;
-  width: 100%;
+
+h1,
+h2,
+h3 {
+  margin: 0;
 }
-a {
-  margin: 23px;
+
+h1 {
+  font-size: 96px;
 }
-.p-3 {
-  text-decoration: none;
+
+h2 {
+  font-size: 48px;
 }
-.center {
-  text-align: center;
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
 }
-#buttons {
-  position: relative;
-  margin-top: 12px;
-}
-.about-content {
-  display: flex;
-  justify-content: center;
-}
-.p {
-  border: 1px solid var(--primary-color);
-  border-radius: 4px;
-  padding: 35px;
-  margin: 13px;
+
+p {
   font-size: 18px;
   line-height: 1.5;
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+}
+
+.primary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.secondary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.homepage-link {
+  color: var(--primary-color);
   text-align: center;
-}
-img {
-  max-width: 100%;
-  height: auto;
-  width: 620px;
-
-  padding: 24px;
-  margin: 24px;
-  opacity: var(--opacity);
+  display: block;
 }
 
-.logo {
-  max-width: 100px;
+.about-paragraphs {
+  margin: 30px 0;
 }
-.navbar {
-  max-width: 1050px;
-  max-height: 100px;
+
+.about-paragraphs p {
+  margin: 10px;
 }
-#down {
-  margin-top: 75px;
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
 }
